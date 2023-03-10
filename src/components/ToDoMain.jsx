@@ -23,13 +23,21 @@ const ToDoMain = () => {
         }
         ]);
 
-console.log(tasks);
+        const addToDoNewTask = (text) => {
+            //turiu iskviesti setTasks metoda
+            //turiu prideti nauja uzduoti i esamu uzduociu sarasa
+            const temVar = [...tasks, {text, isCompleted: false }];
+            setTasks(temVar);
+
+        }
+
 
   return (
     <div>
 
-        <FormForTask />
-        <TableForTasks list={tasks} />
+        <TableForTasks list={tasks}  />
+        <FormForTask addToDoNewTask={addToDoNewTask} />
+
 
     </div>
   )

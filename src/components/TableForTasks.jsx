@@ -1,5 +1,4 @@
 const TableForTasks = (props) => {
-    console.log(props.list)
     return (
         <table>
             <thead>
