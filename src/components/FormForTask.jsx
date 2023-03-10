@@ -20,7 +20,7 @@ const FormForTask = ({ addToDoNewTask }) => {
         <Form.Label>New task</Form.Label>
         <Form.Control
         type="text"
-        placeholder="Enter new task"
+        placeholder="Enter a new task"
         value={inputValue}
         onChange={event => setinputValue(event.target.value)}
          />
